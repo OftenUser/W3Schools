@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Dec 2022 06:28:35 GMT -->
+<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wednesday, December 21, 2022 06:28:35 GMT -->
 <head>
 <title>W3Schools Online Web Tutorials</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+<meta name="Keywords" content="HTML, Python, CSS, SQL, JavaScript, How To, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, Node.js, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn To Code, Source Code, Demos, Tips, Website">
 <meta name="Description" content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
 <meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo_436_2.png">
 <meta property="og:image:type" content="image/png">
@@ -27,32 +27,50 @@
 var searchFromBox = false;
 function gSearch(el) {
   var cx = uic_r_y();
-  var gcse = document.createElement('script'); gcse.id = 'gSearch'; gcse.type = 'text/javascript'; gcse.async = true;
+  var gcse = document.createElement('script');
+  gcse.id = 'gSearch';
+  gcse.type = 'text/javascript';
+  gcse.async = true;
   gcse.src = '../cse.google.com/cse07b6.html?cx=' + cx;
   var el = document.getElementById('gSearch');
+  
   if (el == null) {
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
   }
+  
   open_search(el, searchFromBox);
 };
 
 function gTra(el) {
-  var gtra = document.createElement('script'); gtra.id = 'gTra'; gtra.type = 'text/javascript'; gtra.async = true;
+  var gtra = document.createElement('script');
+  gtra.id = 'gTra';
+  gtra.type = 'text/javascript';
+  gtra.async = true;
   gtra.src = '../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit';
   var el = document.getElementById('gTra');
+  
   if (el == null) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gtra, s);
   }
+  
   open_translate(el);
 };
 </script>
 <!-- Google Tag Manager -->
 <script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KTCFC3S');
+(function(w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = '../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KTCFC3S');
 </script>
 <!-- End Google Tag Manager -->
 <style>
@@ -82,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   color: #fff;
 }
 
-@media (min-width:1675px) {
+@media (min-width: 1675px) {
   #main {
     width: auto;
   }
@@ -2084,36 +2102,45 @@ function myFunction() {<br>
 function openLangTab(evtEd, codeName) {
   var indexEditor, proglanguage, progtablinks;
   proglanguage = document.getElementsByClassName("proglang");
+  
   for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
     proglanguage[indexEditor].style.display = "none";
   }
+  
   progtablinks = document.getElementsByClassName("codeeditorbr-tablink");
+  
   for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
     progtablinks[indexEditor].className = progtablinks[indexEditor].className.replace(" ws-grey", "");
   }
+  
   document.getElementById(codeName).style.display = "block";
   evtEd.currentTarget.className += " ws-grey";
 }
 
 function w3_open() {
   var x = document.getElementById("myAccordion");
+  
   if (x.style.display === 'none') {
     x.style.display = 'block';
+    
     if (document.getElementById("navbtn_menu")) {
       document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "none";
       document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "inline";
     }
   } else {
     x.style.display = 'none';
+    
     if (document.getElementById("navbtn_menu")) {
       document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "inline";
       document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "none";
     }
   }
 }
+  
 function w3_close() {
   document.getElementById("myAccordion").style.display = "none";
 }
+  
 function open_xs_menu(x) {
   if (document.getElementById("sectionxs_" + x).innerHTML == "") {
     document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
@@ -2121,6 +2148,7 @@ function open_xs_menu(x) {
     document.getElementById("sectionxs_" + x).innerHTML = "";
   }
 }
+  
 function w3_open_nav(x) {
   if (document.getElementById("nav_" + x).style.display == "block") {
     w3_close_nav(x);
@@ -2129,44 +2157,55 @@ function w3_open_nav(x) {
     w3_close_nav("references");
     w3_close_nav("exercises");
     document.getElementById("nav_" + x).style.display = "block";
+    
     if (document.getElementById("navbtn_" + x)) {
       document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
       document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
       document.getElementById("navbtn_" + x).classList.add("mystyle");
     } 
+    
     if (x == "search") {
-      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
+      if (document.getElementById("gsc-i-id1")) {
+        document.getElementById("gsc-i-id1").focus();
+      }
     }
   }
 }
+  
 function w3_close_all_nav() {
   w3_close_nav("tutorials");
   w3_close_nav("references");
   w3_close_nav("exercises");
   w3_close();
 }
+  
 function w3_close_nav(x) {
   document.getElementById("nav_" + x).style.display = "none";
+  
   if (document.getElementById("navbtn_" + x)) {
     document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";
     document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
     document.getElementById("navbtn_" + x).classList.remove("mystyle");
   }
 }
+  
 function mouseoverdarkicon() {
   var a = document.getElementById("darkmodemenu");
   a.style.top = "75px";
 }
+  
 function mouseoutofdarkicon() {
   var a = document.getElementById("darkmodemenu");
   a.style.top = "5px";
 }
+  
 function changepagetheme(n) {
   var a = document.getElementById("radio_darkcode");
   var b = document.getElementById("radio_darkpage");
   document.body.className = document.body.className.replace("darktheme", "");
   document.body.className = document.body.className.replace("darkpagetheme", "");    
   document.body.className = document.body.className.replace("  ", " ");
+  
   if (a.checked && b.checked) {
     localStorage.setItem("preferredmode", "light");
     localStorage.setItem("preferredpagemode", "light");
@@ -2180,19 +2219,19 @@ function changepagetheme(n) {
     localStorage.setItem("preferredpagemode", "dark");
     a.checked = true;
     b.checked = true;    
-    document.getElementById("wavepath").style.fill = "rgb(13,23,33)"; 
+    document.getElementById("wavepath").style.fill = "rgb(13, 23, 33)"; 
   }
 }
 
 
 function click_darkpage() {
   var b = document.getElementById("radio_darkpage");
+  
   if (b.checked) {
     document.body.className += " darkpagetheme";
     document.body.className = document.body.className.replace("  ", " ");    
     localStorage.setItem("preferredpagemode", "dark");
-    document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
-    
+    document.getElementById("wavepath").style.fill = "rgb(13, 23, 33)";
   } else {
     document.body.className = document.body.className.replace("darkpagetheme", "");
     document.body.className = document.body.className.replace("  ", " ");    
@@ -2203,6 +2242,7 @@ function click_darkpage() {
 
 function click_darkcode() {
   var a = document.getElementById("radio_darkcode");
+  
   if (a.checked) {
     document.body.className += " darktheme";
     document.body.className = document.body.className.replace("  ", " ");    
@@ -2216,6 +2256,7 @@ function click_darkcode() {
 
 function changecodetheme() {
   var cc = document.body.className;
+  
   if (cc.indexOf("darktheme") > -1) {
     document.body.className = cc.replace("darktheme", "");
     localStorage.setItem("preferredmode", "light");
@@ -2224,27 +2265,34 @@ function changecodetheme() {
     localStorage.setItem("preferredmode", "dark");
   }
 }
+  
 function open_translate(elmnt) {
   var a = document.getElementById("google_translate_element");
+  
   if (a.style.display == "") {
     a.style.display = "none";
     elmnt.innerHTML = "<i class='fa'>&#xe801;</i>";
   } else {
     a.style.display = "";
+    
     if (window.innerWidth > 830) {
       a.style.width = "32%";
     } else {
       a.style.width = "60%";
     }
-    elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+    
+    elmnt.innerHTML = "<span style='font-size: 17px; font-family: verdana; font-weight: bold; display: inline-block; text-align: center;' title='Close'>&times;</span>";
   }
 }
+  
 function open_search(elmnt, sfb) {
   var a = document.getElementById("googleSearch");
+  
   if (a.style.visibility == "hidden" && a.style.display == "") {
     a.style.visibility = "";
     a.style.display = "none";
   }
+  
   if (sfb == false) {
     if (a.style.display == "") {
       a.style.visibility = "";
@@ -2252,7 +2300,8 @@ function open_search(elmnt, sfb) {
       elmnt.innerHTML = "<i class='fa'>&#xe802;</i>";    
     } else {
       a.style.display = "";
-      a.style.visibility == "hidden"
+      a.style.visibility == "hidden";
+      
       if (window.innerWidth > 1000) {
         a.style.width = "50%";
       } else if (window.innerWidth >768) {
@@ -2260,12 +2309,14 @@ function open_search(elmnt, sfb) {
       } else {
         a.style.width = "80%";
       }
+      
       window.setTimeout(function () {
           if (document.getElementById("gsc-i-id1")) {
             document.getElementById("gsc-i-id1").focus();
           }
         }, 400);
-      //elmnt.innerHTML = "<span style='font-size:17px;font-family:verdana;font-weight:bold;display:inline-block;text-align:center;'>&times;</span>";
+      
+      // elmnt.innerHTML = "<span style='font-size: 17px; font-family: verdana; font-weight: bold; display: inline-block; text-align: center;' title='Close'>&times;</span>";
     }
   } else {
     if (a.style.display == "") {
@@ -2275,24 +2326,27 @@ function open_search(elmnt, sfb) {
       a.style.display = "";
       a.style.visibility == "hidden"
     }
+    
     a.style.visibility = "hidden";
     a.style.display = ""; 
   }
 }
 
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-  pageLanguage: 'en',
-  autoDisplay: false,    
-  gaTrack: true,
-  gaId: 'UA-3855518-1',
-  layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false,    
+        gaTrack: true,
+        gaId: 'UA-3855518-1',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
 }
+  
 function clickFBLike() {
   document.getElementById("fblikeframe").style.display='block';
-  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='height:200px;width:250px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color'>Close</button>";
+  document.getElementById("popupDIV").innerHTML = "<iframe src='/fblike.asp?r=" + Math.random() + "' frameborder='no' style='width: 250px; height: 200px;'></iframe><br><button onclick='hideFBLike()' class='w3-button w3-round w3-large black-color' title='Close'>Close</button>";
 }
+  
 function hideFBLike() {
   document.getElementById("fblikeframe").style.display='none';
 }
@@ -2316,9 +2370,9 @@ var pagesArr = [
   ["c#", "cs/index.html", "C# Tutorial"],
   ["jquery", "jquery/default.html", "jQuery Tutorial"],
   ["w3css", "w3css/default.html", "W3.CSS Tutorial"],
-  ["bootstrap 3", "bootstrap/default.html", "Bootstrap3 Tutorial"],
-  ["bootstrap 4", "bootstrap4/default.html", "Bootstrap4 Tutorial"],
-  ["bootstrap 5", "bootstrap5/index.html", "Bootstrap5 Tutorial"],
+  ["bootstrap 3", "bootstrap/default.html", "Bootstrap 3 Tutorial"],
+  ["bootstrap 4", "bootstrap4/default.html", "Bootstrap 4 Tutorial"],
+  ["bootstrap 5", "bootstrap5/index.html", "Bootstrap 5 Tutorial"],
   ["r", "r/default.html", "R Tutorial"],
   ["kotlin", "kotlin/index.html", "KOTLIN Tutorial"],
   ["mysql", "mysql/default.html", "MySQL Tutorial"],
@@ -2405,7 +2459,7 @@ var pagesArr = [
   ["", "charsets/ref_html_utf8.html", "HTML UTF-8"],
   ["django", "django/index.html", "Django Tutorial"],
   ["mongodb", "mongodb/index.html", "MongoDB Tutorial"],    
-  ["", "typingspeed/default.html", "Test your typing speed"],  
+  ["", "typingspeed/default.html", "Test Your Typing Speed"],  
   ["css certificate", "../campus.w3schools.com/collections/certifications/products/css-certificate.html", "CSS Certificate"], 
   ["js certificate", "../campus.w3schools.com/collections/certifications/products/javascript-certificate.html", "JavaScript Certificate"],   
   ["front end certificate", "../campus.w3schools.com/collections/certifications/products/front-end-certificate.html", "Front End Certificate"],   
@@ -2418,12 +2472,12 @@ var pagesArr = [
   ["c# certificate", "../campus.w3schools.com/collections/certifications/products/c-certificate-1.html", "C# Certificate"],       
   ["xml certificate", "../campus.w3schools.com/collections/certifications/products/xml-certificate.html", "XML Certificate"],         
   ["hosting", "spaces/index-2.html", "W3Schools Spaces"],         
-  ["free website", "spaces/index-2.html", "Free website with W3Schools Spaces"],           
+  ["free website", "spaces/index-2.html", "Free Website With W3Schools Spaces"],           
   ["pro", "pro/index.html", "W3Schools Pro User"],           
-  ["ad free", "pro/index.html", "W3Schools without ads"],             
+  ["ad free", "pro/index.html", "W3Schools Without Ads"],             
   ["videos", "videos/index.html", "W3Schools Video"],             
-  ["login", "../profile.w3schools.com/index.html", "Log into your W3Schools account"],               
-  ["sign up", "../profile.w3schools.com/index.html", "Sign up - Create a W3Schools account"],
+  ["login", "../profile.w3schools.com/index.html", "Log Into Your W3Schools Account"],               
+  ["sign up", "../profile.w3schools.com/index.html", "Sign Up - Create A W3Schools Account"],
   ["", "tryit/tryit80b6.html?filename=tryhtml_hello", "HTML Compiler"],
   ["", "python/trypython99ba.html?filename=demo_default", "Python Compiler"],  
   ["", "sql/trysql03b0.html?filename=trysql_select_where", "SQL Compiler"],    
@@ -2445,24 +2499,27 @@ var pagesArr = [
   ["", "tryit/trycompilerca90.html?filename=demo_scala", "Scala Compiler"],            
   ["", "tryit/trycompiler3ae6.html?filename=demo_swift", "Swift Compiler"],            
   ["", "tryit/trycompiler21ca.html?filename=demo_vbnet", "VB.NET Compiler"],                
-  
-      
 ];
 
 function click_learntocode_search_btn() {
   var x = document.getElementsByClassName("search_item");
+  
   if (x.length == 0) {
     cc = 1;
   }
+  
   for (i = 0; i < x.length; i++) {
     if (x[i].className.indexOf("search_active") > -1) {
       n = x[i].href;
+      
       if (n.indexOf("search_entire_w3schools") > -1) {
         cc = 1;
       }
+      
       break;
     }
   }
+  
   if (cc == 1) {
     searchFromBox = true;
     submit_search_form();
@@ -2470,6 +2527,7 @@ function click_learntocode_search_btn() {
     window.location = n;
   }
 }
+  
 function find_search_results(inp) {
   var a, val, i, l, resultIndexes = [], resultTexts = [], html = "", classAtt = "", pos1, posNext, cc, c0, c1, c2;
   a = document.getElementById("listofsearchresults");
@@ -2478,6 +2536,7 @@ function find_search_results(inp) {
   document.getElementById("search2").style.borderBottomLeftRadius = "25px";
   val = inp.value.toUpperCase();
   if (val == "") return false;
+  
   for (i = 0; i < pagesArr.length; i++) {
     if (pagesArr[i][0].toUpperCase().substr(0, val.length) == val || pagesArr[i][2].toUpperCase().substr(0, val.length) == val) {
       if (resultTexts.indexOf(pagesArr[i][2]) == -1) {
@@ -2487,6 +2546,7 @@ function find_search_results(inp) {
       }
     }
   }
+  
   for (i = 0; i < pagesArr.length; i++) {
     if (resultIndexes.indexOf(i) == -1 && (pagesArr[i][0].toUpperCase().indexOf(val) > -1 || pagesArr[i][2].toUpperCase().indexOf(val) > -1)) {
       if (resultTexts.indexOf(pagesArr[i][2]) == -1) {
@@ -2496,19 +2556,23 @@ function find_search_results(inp) {
       }
     }
   }
-  //if (resultIndexes.length == 0) return false;
+  
+  // if (resultIndexes.length == 0) return false;
   document.getElementById("search2").style.borderBottomLeftRadius = "0";
   a.style.display = "block";
+  
   for (i = 0; i < resultIndexes.length; i++) {
     cc = pagesArr[resultIndexes[i]][2];
     pos1 = cc.toUpperCase().indexOf(val);
     dd = "";
+    
     while (pos1 > -1) {
       c0 = cc.substr(0, pos1);
       c1 = "<span class='span_search'>" + cc.substr(pos1, val.length) + "</span>";
       c2 = cc.substr(pos1 + val.length);
       dd += c0 + c1;
       posNext = c2.toUpperCase().indexOf(val);
+      
       if (posNext > -1) {
         cc = c2;
         pos1 = posNext;
@@ -2517,21 +2581,26 @@ function find_search_results(inp) {
         pos1 = -1;
       }
     }
+    
     classAtt = "";
     if (html == "") classAtt = " search_active";
     html += "<a class='search_item" + classAtt + "' href='" + pagesArr[resultIndexes[i]][1] + "'>" + cc + "</a>";
   }
+  
   if (resultIndexes.length == 0) {
     classAtt = "";
     if (html == "") classAtt = " search_active";
     html += "<a class='search_item" + classAtt + "' onclick='click_search_w3schools_link(event)' href='search_entire_w3schools'>Search W3Schools</a>";
   }
+  
   a.innerHTML = html;
 }
+  
 function click_search_w3schools_link(event) {
   event.preventDefault();
   submit_search_form();
 }
+  
 function key_pressed_in_search(event) {
   var x, n, nn, i, cc = 0;
   var keycode = event.keyCode;
@@ -2582,7 +2651,7 @@ function key_pressed_in_search(event) {
 function submit_search_form() {
     searchFromBox = true;
     gSearch();
-    var delayInMilliseconds = 100; //0.1 second
+    var delayInMilliseconds = 100; // 0.1 seconds
     setTimeout(execute_google_search, delayInMilliseconds);
 }
 
@@ -2596,21 +2665,24 @@ function execute_google_search() {
 
 document.body.addEventListener("click", function(event) {
   var a, x = event.srcElement;
+  
   if (x.id == "search2" ||x.id == "learntocode_searchbtn" || x.id == "learntocode_searchicon" || x.classList.contains("search_item")) {
   } else {
     a = document.getElementById("listofsearchresults");
     a.innerHTML = "";
     a.style.display = "none";
     document.getElementById("search2").style.borderBottomLeftRadius = "25px";
+    
     if (searchFromBox == true) {
       document.getElementById("googleSearch").style.display = "none";
       document.getElementById("googleSearch").style.visibility = "";  
     }
+    
     searchFromBox = false;
   }
 });
 </script>
 </body>
 
-<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Dec 2022 06:33:22 GMT -->
+<!-- Mirrored from www.w3schools.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wednesday, December 21, 2022 06:33:22 GMT -->
 </html>
